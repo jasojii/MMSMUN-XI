@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+@font-face {
+    font-family: made-avenue;
+    src: url(MADEAvenuePERSONALUSE-Regular.ttf);
+ }
+
+ @font-face {
+    font-family: albra-regular;
+    src: url(Albra-Regular-Italic.ttf);
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #0E3653;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0e3653;
+    border-bottom: 2px solid #FFF0DB;
+}
+
+.logo {
+    height: 50px;
+    width: 60px;
+    padding: 13px;
+    margin-left: 20px;
+    outline: none;
+}
+
+a {
+    outline: none;
+}
+
+.title {
+    font-size: 25px;
+    font-family: made-avenue, serif;
+    color: #FFF0DB;
+    text-decoration: none;
+    position: absolute;
+    left: 7%;
+    outline: none;
+  }
+
+
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0E3653;
+    margin-right: 50px;
+    position: absolute;
+    right: .005%;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #FFF0DB;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+}
+
+.committees {
+    padding: 28px 40px;
+    outline: none;
+}
+
+.registration {
+    padding: 28px 40px;
+    outline: none;
+}
+
+.guides {
+    padding: 28px 40px;
+    outline: none;
+}
+
+.secretariat {
+    padding: 28px 40px;
+    outline: none;
+}
+
+.charity {
+    padding: 28px 40px;
+    outline: none;
+}
+
+.contacta {
+    padding: auto;
+    outline: none;
+}
+
+.contact {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    color: #0e3653;
+    background-color: #FFC38B; 
+    outline: none;
+}
+
+.contact:hover {
+    cursor: pointer;
+}
+
+.fa fa-caret-down {
+    color: #FFF0DB
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: #FFF0DB;
+    padding: 28px 40px;
+    background-color: inherit;
+    font-family: Inter;
+    margin: 0;
+}
+
+.subnavbtn:hover {
+    background-color: #114163;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.subnav-content {
+    display:none;
+    position: absolute;
+    left: 0;
+    background-color: #114163;
+    width: 89.45% ;
+    z-index: 3;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+.subnav:hover {
+    background-color:#114163
+}
+  
+  /* Style the subnav links */
+.subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+
+a.subnav-content:hover ~ btn[class="subnavbtn"] {
+    background-color: #114163;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+  }
+
+a.committees:hover {
+    background: #175480;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+}
+ 
+a.guides:hover {
+    background: #175480;
+    border-radius: 20px;
+}
+
+a.registration:hover {
+    background: #175480;
+    border-radius: 20px;
+}
+
+/* MAIN */
+
+.main {
+    overflow: hidden;
+}
+
+.imgparent {
+    width: 100%;
+    height: 600px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: -80px;
+}
+
+.circleletter {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -40px;
+    z-index: 2;
+    position: relative;
+}
+
+.mun {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    display: block;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    top: 32.5%;
+    left: 0;
+    right: 0;
+}
+
+.muntitle {
+    text-align: center;
+    font-family: made-avenue;
+    font-size: 4.5rem;
+    font-weight: lighter;
+    color: #FFF0DB;
+    padding-top: -60px;
+}
+
+.flags {
+    display: grid; 
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.flags img {
+    width: 160px;
+    height: 80px;
+    padding: 15px;
+}
+
+.flags2 {
+    margin-left: 2rem;
+    display: grid;
+    gap: 0.6rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-bottom: 30px;
+}
+
+.flags2 img {
+    width: 160px;
+    height: 80px;
+    padding: 15px 15px 30px 15px;
+}
+
+/* CONTACT */
+
+.about {
+    width: 100%;
+    height: 800px;
+    margin: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #FFF0DB;
+}
+
+/* ABOUT */
+
+.abouttitle {
+    font-size: 4.5rem;
+    font-family: made-avenue;
+    color: #0E3653;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.aboutimg {
+    float: left;
+    border-radius: 25px;
+    margin-left: 40px;
+
+}
+
+.aboutparagraph {
+    font-size: 1.5rem;
+    font-family: Inter;
+    line-height: 1.6;
+    color: #0E3653;
+    margin-left: 700px;
+    padding-right: 40px;
+}
+
+.locationtitle {
+    font-family: albra-regular;
+    font-size: 1.8rem;
+    color: #0E3653;
+    text-align: center;
+}
+
+.location {
+    font-size: 1.4rem;
+    font-family: Inter;
+    text-align: center;
+    color: #0E3653;
+
+}
+
+.footer {
+    height: 160px;
+    width: 100%;
+    background-color: #0E3653;
+    border-top: 2px solid #FFF0DB;
+}
+
+.munlogofooter {
+    height: 75px;
+    float: left;
+    margin-left: 3.5%;
+    margin-top: 15px;
+}
+
+.munfooter {
+    font-family: made-avenue;
+    font-size: 1.5rem;
+    color: #FFF0DB;
+    line-height: 120px;
+    margin-left: 9%;
+    margin-top: 0;
+}
+
+.credits {
+    margin-left: 3.5%;
+    font-family: albra-regular;
+    color: #FFF0DB;
+    margin-top: -40px;
+    padding-bottom: 5px;
+}
+
+.insta {
+    margin-left: 3.5%;
+    color: #FFF0DB;
+    font-size: 1.2rem;
+}
+
+.github {
+    margin-left: 1%;
+    color: #FFF0DB;
+    font-size: 1.2rem;
+}
+
+.insta, .github {
+    padding-bottom: 40px;
+}
